@@ -128,3 +128,9 @@
 .DEFINE NR22 SND_CHAN2_VOL_ENVEL
 .DEFINE NR23 SND_CHAN2_FREQ_LO
 .DEFINE NR24 SND_CHAN2_FREQ_HI_FLAGS
+
+; Joy pad register
+.DEFINE rP1 $FF00
+
+.DEFINE P1F_5 %00100000 ; P15 out port, set to 0 to get buttons
+.DEFINE P1F_4 %00010000 ; P14 out port, set to 0 to get dpad
